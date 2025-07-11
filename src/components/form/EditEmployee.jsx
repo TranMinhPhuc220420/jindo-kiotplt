@@ -9,9 +9,9 @@ import { SaveOutlined, CloseOutlined } from "@ant-design/icons";
 import { Button, Input } from "antd";
 
 // Firebase
-import { updateEmployee } from "../../database";
+import { updateEmployee } from "@/database";
 
-import { EMPLOYEE_LEVEL, BRANCH_LIST, POSITION_LIST } from "../../constant";
+import { EMPLOYEE_LEVEL, BRANCH_LIST, POSITION_LIST } from "@/constant";
 
 const EditEmployee = ({ employeeId, employeeEdit, onOK, onFail, onCancel }) => {
   // i18n

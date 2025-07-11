@@ -1,8 +1,8 @@
-import DemoChartTooltip from '../components/chart/DemoDefaultTooltip';
-import DemoSegmentedLine from '../components/chart/DemoSegmentedLine';
-import DemoMemo from '../components/chart/DemoMemo';
+import DemoChartTooltip from '@/components/chart/DemoDefaultTooltip';
+import DemoSegmentedLine from '@/components/chart/DemoSegmentedLine';
+import DemoMemo from '@/components/chart/DemoMemo';
 
-const DashboardPage = () => {
+const DashboardEmployeePage = () => {
   return (
     <div className="h-full mt-2 p-4 bg-gray-100 overflow-auto">
       <div className='grid gap-4'>
@@ -27,4 +27,4 @@ const DashboardPage = () => {
   );
 };
 
-export default DashboardPage;
+export default DashboardEmployeePage;

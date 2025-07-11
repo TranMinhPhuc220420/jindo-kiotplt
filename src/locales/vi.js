@@ -1,7 +1,7 @@
 const VIETNAMESE_TRANSLATIONS = {
   translation: {
-    'TXT_APP_NAME': 'Kiot PLT',
-    'TXT_APP_DESCRIPTION': 'Ứng dụng quản lý bán hàng và nhân viên',
+    'TXT_APP_NAME': 'PLT Retail Store',
+    'TXT_APP_DESCRIPTION': 'Ứng dụng quản lý cửa hàng bán lẻ',
 
     'TXT_DASHBOARD': 'Trang chủ',
     'TXT_REPORT': 'Báo cáo',
@@ -20,7 +20,7 @@ const VIETNAMESE_TRANSLATIONS = {
     'TXT_GO_TO_SALE_MEMBER_SCREEN': 'Màn hình bán hàng',
     'TXT_GO_TO_ADMIN_SCREEN': 'Màn hình quản trị',
 
-    'TXT_SALE': 'Bán hàng',
+    'TXT_SELL': 'Bán hàng',
     'TXT_CLIENT': 'Khách hàng',
     'TXT_INVOICE': 'Hóa đơn',
     'TXT_SHIFT_HANDOVER': 'Bàn giao ca',

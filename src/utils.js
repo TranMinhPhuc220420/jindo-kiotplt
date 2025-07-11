@@ -1,4 +1,4 @@
-import { POSITION_LIST, EMPLOYEE_LEVEL, BRANCH_LIST } from './constant';
+import { POSITION_LIST, EMPLOYEE_LEVEL, BRANCH_LIST } from '@/constant';
 
 export const generateId = () => {
   // Generate a random 8-character alphanumeric and time now string

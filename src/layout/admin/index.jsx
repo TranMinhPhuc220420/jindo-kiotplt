@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router';
 
 // Hook components
-import useAuth from "../../hooks/useAuth";
+import useAuth from "@/hooks/useAuth";
 
 import { Layout } from 'antd';
 const { Content } = Layout;

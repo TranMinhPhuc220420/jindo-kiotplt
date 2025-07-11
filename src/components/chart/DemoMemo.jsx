@@ -27,27 +27,27 @@ const DemoMemo = () => {
   const [count, setCount] = useState(0);
   const [data, setData] = useState([
     {
-      type: '分类一',
+      type: 'Danh mục 1',
       value: 27,
     },
     {
-      type: '分类二',
+      type: 'Danh mục 2',
       value: 25,
     },
     {
-      type: '分类三',
+      type: 'Danh mục 3',
       value: 18,
     },
     {
-      type: '分类四',
+      type: 'Danh mục 4',
       value: 15,
     },
     {
-      type: '分类五',
+      type: 'Danh mục 5',
       value: 10,
     },
     {
-      type: '其他',
+      type: 'Khác',
       value: 5,
     },
   ]);
@@ -59,7 +59,7 @@ const DemoMemo = () => {
           setCount(count + 1);
         }}
       >
-        不会重新渲染
+        Không render lại
       </Button>
       <Button
         style={{ margin: '0 10px' }}
@@ -68,7 +68,7 @@ const DemoMemo = () => {
           setData(data.map((d) => ({ ...d, value: Math.floor(Math.random() * 100) })));
         }}
       >
-        重新渲染
+        Render lại
       </Button>
       <span>{count}</span>
       <DemoPie data={data} onReady={({ chart }) => {}} />

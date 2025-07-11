@@ -3,18 +3,23 @@ import React from "react";
 import { Routes, Route, createBrowserRouter } from "react-router";
 
 // Layouts
-import LayoutAdmin from "./layout/admin";
-import LayoutClient from "./layout/client";
+import LayoutAdmin from "@/layout/admin";
+import LayoutEmployee from "@/layout/employee";
 
-import DashboardPage from "./pages/DashboardPage";
-import RevenueManagerPage from "./pages/revenue/manager";
-import ProductManagerPage from "./pages/product/manager";
-import InventoryManagerPage from "./pages/inventory/manager";
-import ReportPage from "./pages/ReportPage";
+import DashboardPage from "@/pages/admin/DashboardPage";
+import RevenueManagerPage from "@/pages/admin/revenue/manager";
+import ProductManagerPage from "@/pages/admin/product/manager";
+import InventoryManagerPage from "@/pages/admin/inventory/manager";
+import ReportPage from "@/pages/admin/ReportPage";
 
-import ManagerEmployeePage from "./pages/employee/manager";
+import ManagerEmployeePage from "@/pages/admin/manager";
+import DashboardEmployeePage from "@/pages/employee/DashboardPage";
+import SellManagerPage from "@/pages/employee/sell/manager";
+import ClientManagerPage from "@/pages/employee/client/manager";
+import InvoiceManagerPage from "@/pages/employee/invoice/manager";
+import ShiftHandoverManagerPage from "@/pages/employee/shiftHandover/manager";
 
-import LoginPage from "./pages/login";
+import LoginPage from "@/pages/login";
 
 const router = createBrowserRouter([
   {
@@ -62,11 +67,28 @@ const router = createBrowserRouter([
   // Client routes
   {
     path: '/',
-    element: <LayoutClient />,
+    element: <LayoutEmployee />,
     children: [
       {
-        path: 'dashboard',
-        element: <DashboardPage />,
+        index: true,
+        // path: 'dashboard',
+        element: <DashboardEmployeePage />,
+      },
+      {
+        path: 'ban-hang',
+        element: <SellManagerPage />,
+      },
+      {
+        path: 'khach-hang',
+        element: <ClientManagerPage />,
+      },
+      {
+        path: 'hoa-don',
+        element: <InvoiceManagerPage />,
+      },
+      {
+        path: 'giao-ca',
+        element: <ShiftHandoverManagerPage />,
       },
     ],
   },

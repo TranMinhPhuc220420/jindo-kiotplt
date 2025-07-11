@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 // import { getAnalytics } from "firebase/analytics";
 
-import { config } from "./config";
+import { config } from "@/firebase/config";
 
 const firebaseApp = initializeApp(config);
 const db = getFirestore(firebaseApp);

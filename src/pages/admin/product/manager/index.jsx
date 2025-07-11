@@ -5,19 +5,19 @@ import * as XLSX from 'xlsx';
 import { useTranslation } from "react-i18next";
 
 // Firebase
-import { getEmployeeList, deleteEmployee, addEmployee } from "../../../database";
+import { getEmployeeList, deleteEmployee, addEmployee } from "@/database";
 
 import { PlusOutlined, FileExcelOutlined, TeamOutlined, DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import { Breadcrumb, Button, Modal, message, Table, Space, Popconfirm } from "antd";
 const { Column, ColumnGroup } = Table;
 
-import { BRANCH_LIST } from "../../../constant";
+import { BRANCH_LIST } from "@/constant";
 
 // Components
-import AddEmployeeForm from "../../../components/form/AddEmployee";
-import EditEmployeeForm from "../../../components/form/EditEmployee";
+import AddEmployeeForm from "@/components/form/AddEmployee";
+import EditEmployeeForm from "@/components/form/EditEmployee";
 
-const InventoryManagerPage = () => {
+const ProductManager = () => {
   // Ref
   const inputRef = useRef(null);
 
@@ -457,4 +457,4 @@ const InventoryManagerPage = () => {
   );
 };
 
-export default InventoryManagerPage;
+export default ProductManager;

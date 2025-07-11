@@ -9,11 +9,11 @@ import { useNavigate } from 'react-router';
 import { useTranslation } from 'react-i18next';
 
 // Hook components
-import useAuth from "../../hooks/useAuth";
+import useAuth from "@/hooks/useAuth";
 
 // Redux
 import { useDispatch, useSelector } from "react-redux";
-import { toggleSider } from '../../store/features/app';
+import { toggleSider } from '@/store/features/app';
 
 // Ant Design
 import { ShoppingCartOutlined, UserOutlined, FileDoneOutlined, LoadingOutlined, HomeOutlined, BlockOutlined } from '@ant-design/icons';
@@ -79,7 +79,7 @@ const SiderApp = ({ isLoading }) => {
       key: 'sale_dashboard',
       icon: <ShoppingCartOutlined />,
       pathname: '/ban-hang',
-      label: t('TXT_SALE'),
+      label: t('TXT_SELL'),
     },
     {
       key: 'client_dashboard',

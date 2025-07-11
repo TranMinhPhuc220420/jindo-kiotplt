@@ -3,11 +3,11 @@ import React, { } from 'react';
 import clsx from 'clsx';
 
 // Hook components
-import useAuth from "../../hooks/useAuth";
+import useAuth from "@/hooks/useAuth";
 
 // Redux
 import { useDispatch, useSelector } from "react-redux";
-import { toggleSider } from '../../store/features/app';
+import { toggleSider } from '@/store/features/app';
 
 // Ant Design
 import { MenuUnfoldOutlined, MenuFoldOutlined, LoadingOutlined, BellOutlined } from '@ant-design/icons';

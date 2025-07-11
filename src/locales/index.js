@@ -1,9 +1,9 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import JAPANESE_TRANSLATIONS from "./ja";
-import ENGLISH_TRANSLATIONS from "./en";
-import VIETNAMESE_TRANSLATIONS from "./vi";
+import JAPANESE_TRANSLATIONS from "@/locales/ja";
+import ENGLISH_TRANSLATIONS from "@/locales/en";
+import VIETNAMESE_TRANSLATIONS from "@/locales/vi";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next

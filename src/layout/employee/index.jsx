@@ -5,7 +5,7 @@ const { Content, Footer } = Layout;
 
 import { Outlet } from 'react-router';
 
-import useAuth from '../../hooks/useAuth';
+import useAuth from '@/hooks/useAuth';
 
 import HeaderApp from './HeaderApp';
 

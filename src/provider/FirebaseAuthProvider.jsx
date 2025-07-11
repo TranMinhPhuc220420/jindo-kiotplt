@@ -1,8 +1,8 @@
 import { useEffect, useReducer } from "react";
 
-import AuthContext from "./FirebaseAuthContext";
+import AuthContext from "@/provider/FirebaseAuthContext";
 
-import firebaseApp from "../firebase";
+import firebaseApp from "@/firebase";
 
 import {
   GoogleAuthProvider, onAuthStateChanged, getAuth, signOut, signInWithPopup

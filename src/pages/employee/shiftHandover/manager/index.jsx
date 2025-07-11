@@ -5,17 +5,17 @@ import * as XLSX from 'xlsx';
 import { useTranslation } from "react-i18next";
 
 // Firebase
-import { getEmployeeList, deleteEmployee, addEmployee } from "../../../database";
+import { } from "@/database";
 
 import { PlusOutlined, FileExcelOutlined, AuditOutlined, DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import { Breadcrumb, Button, Modal, message, Table, Space, Popconfirm } from "antd";
 const { Column, ColumnGroup } = Table;
 
-import { BRANCH_LIST } from "../../../constant";
+import { BRANCH_LIST } from "@/constant";
 
 // Components
 
-const RevenueManager = () => {
+const ShiftHandoverManagerPage = () => {
   // Ref
 
   // Translation
@@ -167,4 +167,4 @@ const RevenueManager = () => {
   );
 };
 
-export default RevenueManager;
+export default ShiftHandoverManagerPage;

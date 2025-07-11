@@ -5,12 +5,12 @@ import { Button } from "antd";
 // i18n
 import { useTranslation } from 'react-i18next';
 
-import GoogleIcon from "../../assets/images/google-icon.png";
+import GoogleIcon from "@/assets/images/google-icon.png";
 
 // Hook components
-import useAuth from "../../hooks/useAuth";
+import useAuth from "@/hooks/useAuth";
 
-import Logo from "../../assets/favicon.ico";
+import Logo from "@/assets/favicon.ico";
 
 // Styles
 import styles from './index.module.css';

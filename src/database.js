@@ -1,9 +1,9 @@
 import { collection, addDoc, setDoc, getDocs, deleteDoc, updateDoc, doc } from "firebase/firestore";
 
-import { db } from "./firebase";
+import { db } from "@/firebase";
 
-import { EMPLOYEE_COLLECTION } from "./constant";
-import { formatCurrency, getNameBranch, getNameLevel, getNamePosition } from "./utils";
+import { EMPLOYEE_COLLECTION } from "@/constant";
+import { formatCurrency, getNameBranch, getNameLevel, getNamePosition } from "@/utils";
 
 /**
  * Get the list of employees from the Firestore database.
